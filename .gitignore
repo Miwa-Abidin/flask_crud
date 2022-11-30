@@ -1,0 +1,5 @@
+.idea/
+venv/
+app/__pacache__/
+migrations/__pacache__/
+.DS_Store

@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Создать студента</h1>
+
+<form method="POST">
+<p> Вы действительно хотите удалить студента? </p>
+<p> ID = {{ student.id }} </p>
+<p> ФИО = {{ student.name }} </p>
+  <button type="submit" class="btn btn-danger">Удалить</button>
+
+</form>
+
+{% endblock content %}
+

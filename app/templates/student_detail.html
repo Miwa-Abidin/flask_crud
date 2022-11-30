@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+<h3>{{student.name}}</h3>
+<p>{{ student.birth_date }}</p>
+<p>
+    <a class="btn btn-warning" href="{{ url_for('student_update', id=student.id) }}"> Изменить </a>
+</p>
+<p>
+    <a class="btn btn-danger" href="{{ url_for('student_delete', id=student.id) }}"> Удалить </a>
+</p>
+
+{% endblock content %}
+
